@@ -13,7 +13,7 @@ public class TransmissionBusinessRules
 
     public void CheckIfTransmissionNameNotExists(string transmissionName)
     {
-        bool isExists = _transmissionDal.GetList().Any(b => b.Name == transmissionName);
+        bool isExists = _transmissionDal.GetList().Any(t => t.Name == transmissionName);
         if (isExists)
         {
             throw new Exception("Transmission already exists.");

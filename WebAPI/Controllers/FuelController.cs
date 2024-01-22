@@ -11,9 +11,9 @@ namespace WebAPI.Controllers;
 public class FuelController : ControllerBase
 {
     private readonly IFuelService _fuelService;
-    public FuelController()
+    public FuelController(IFuelService fuelService)
     {
-        _fuelService = ServiceRegistration.FuelService;
+        _fuelService = fuelService;
     }
 
     [HttpGet]

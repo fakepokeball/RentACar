@@ -2,34 +2,30 @@
 using Entities.Concrete;
 
 namespace DataAccess.Concrete.EntityFramework;
-public class EfBrandDal : IBrandDal
+
+public class EfModelDal : IModelDal
 {
-    public void Add(Brand entity)
+    public void Add(Model entity)
     {
         throw new NotImplementedException();
     }
 
-    public void Delete(Brand entity)
+    public void Delete(Model entity)
     {
         throw new NotImplementedException();
     }
 
-    //public IList<Brand> GetBrandsByNameSearch(string nameSearch)
-    //{
-    //    throw new NotImplementedException();
-    //}
-
-    public Brand? GetById(int id)
+    public Model? GetById(int id)
     {
         throw new NotImplementedException();
     }
 
-    public IList<Brand> GetList()
+    public IList<Model> GetList()
     {
         throw new NotImplementedException();
     }
 
-    public void Update(Brand entity)
+    public void Update(Model entity)
     {
         throw new NotImplementedException();
     }

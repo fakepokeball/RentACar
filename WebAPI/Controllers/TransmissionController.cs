@@ -11,9 +11,9 @@ namespace WebAPI.Controllers;
 public class TransmissionController : ControllerBase
 {
     private readonly ITransmissionService _transmissionService;
-    public TransmissionController()
+    public TransmissionController(ITransmissionService transmissionService)
     {
-        _transmissionService = ServiceRegistration.TransmissionService;
+        _transmissionService = transmissionService;
     }
 
     [HttpGet]

@@ -13,7 +13,7 @@ public class FuelBusinessRules
 
     public void CheckIfFuelNameNotExists(string fuelName)
     {
-        bool isExists = _fuelDal.GetList().Any(b => b.Name == fuelName);
+        bool isExists = _fuelDal.GetList().Any(f => f.Name == fuelName);
         if (isExists)
         {
             throw new Exception("Fuel already exists.");
