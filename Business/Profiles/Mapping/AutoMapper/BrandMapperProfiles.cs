@@ -5,9 +5,9 @@ using Entities.Concrete;
 
 namespace Business.Profiles.Mapping.AutoMapper;
 
-public class BrandManagerProfiles : Profile
+public class BrandMapperProfiles : Profile
 {
-    public BrandManagerProfiles()
+    public BrandMapperProfiles()
     {
         CreateMap<AddBrandRequest, Brand>();
         CreateMap<Brand, AddBrandRequest>();

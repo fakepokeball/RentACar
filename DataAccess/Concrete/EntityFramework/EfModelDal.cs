@@ -5,27 +5,27 @@ namespace DataAccess.Concrete.EntityFramework;
 
 public class EfModelDal : IModelDal
 {
-    public void Add(Model entity)
+    public Model Add(Model entity)
     {
         throw new NotImplementedException();
     }
 
-    public void Delete(Model entity)
+    public Model Delete(Model entity)
     {
         throw new NotImplementedException();
     }
 
-    public Model? GetById(int id)
+    public Model? Get(Func<Model, bool> predicate)
     {
         throw new NotImplementedException();
     }
 
-    public IList<Model> GetList()
+    public IList<Model> GetList(Func<Model, bool>? predicate = null)
     {
         throw new NotImplementedException();
     }
 
-    public void Update(Model entity)
+    public Model Update(Model entity)
     {
         throw new NotImplementedException();
     }
